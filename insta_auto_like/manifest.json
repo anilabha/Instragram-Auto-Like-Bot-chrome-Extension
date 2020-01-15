@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "Insta Auto Like Bot",
+    "description": "Auto Like Bot For Instragram",
+    "version": "1.0",
+    "icons": {
+        "96": "logo.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["jquery-3.4.0.min.js", "a.js"],
+        "run_at": "document_end"
+    }]
+}
